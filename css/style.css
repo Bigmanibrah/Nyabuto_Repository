@@ -1158,4 +1158,53 @@ body.light-mode .section-dark {
   .stat-divider {
     display: none;
   }
+
+  /* Core Phone Responsiveness */
+  .members-grid,
+  .video-grid,
+  .gallery-grid,
+  .files-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .about-leader-profile {
+    align-items: center !important;
+    margin-top: 2rem !important;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .file-card,
+  .video-card,
+  .member-card {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+  .hero {
+    padding: 100px 0 60px;
+  }
+  
+  .nav-controls {
+    gap: 0.5rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
 }
